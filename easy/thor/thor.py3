@@ -10,17 +10,17 @@ import math
 # light_y: the Y position of the light of power
 # initial_tx: Thor's starting X position
 # initial_ty: Thor's starting Y position
-light_x, light_y, initial_tx, initial_ty = [int(i) for i in raw_input().split()]
+light_x, light_y, initial_tx, initial_ty = [int(i) for i in input().split()]
 
 tx = initial_tx;
 ty = initial_ty;
 
 # game loop
 while True:
-    remaining_turns = int(raw_input())  # The remaining amount of turns Thor can move. Do not remove this line.
+    remaining_turns = int(input())  # The remaining amount of turns Thor can move. Do not remove this line.
 
     # Write an action using print
-    # To debug: print >> sys.stderr, "Debug messages..."
+    # To debug: print("Debug messages...", file=sys.stderr)
 
 
     direction = "N";
@@ -54,4 +54,4 @@ while True:
         tx -= 1
         ty -= 1
 
-    print direction
+    print(direction)
